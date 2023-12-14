@@ -1,11 +1,11 @@
 const connection=require("../mysql.js");
 
-exports.getAll.getAll=async function(req,res){
+exports.getAll=async function(req,res){
     let arr=[];
     await connection.query ("SELECT * FROM article")
     .then(data=> {
         console.log ("data"); 
-        console. log(data);
+        console.log(data);
         for (let i=0;i<data[0].length;i++)
         {
             arr[i]=data[0][i];

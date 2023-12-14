@@ -7,5 +7,5 @@ const homeController = require("../controllers/homeController.js");
 const { route } = require('./admin');
 
 router.get('/',homeController.getIndex);
-n
+
 module.exports = router;
