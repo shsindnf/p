@@ -22,7 +22,7 @@ exports.editArticle = async function(req, res){
     res.render('adminArticleShow', {data:m});
 };
 exports.deleteArticle = async function(req, res){
-    await Models.deleteOne(req.body);
+    await Models.deleteOne(req.body.idArticle);
     let m=await Models.getAll();
     res.render('adminArticles', {data:m});
 };

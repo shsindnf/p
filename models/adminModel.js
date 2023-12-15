@@ -62,7 +62,7 @@ exports.editOne=async function(req, res){
 
 exports.deleteOne=async function(req, res){
     console.log("model del");
-    console.l0g(req)
+    console.log(req)
     let sql="delete from article where idArticle=?"; 
     filter=[req];
     await connection.query(sql, filter)
